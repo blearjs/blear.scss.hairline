@@ -14,7 +14,7 @@
   transform: scale(1);
 
   @for $i from 2 through 3 {
-    @media(-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+    @media (-webkit-min-device-pixel-ratio: $i), (min-device-pixel-ratio: $i) {
       width: percentage($i);
       height: percentage($i);
       -webkit-transform: scale(1/$i);
@@ -23,11 +23,28 @@
   }
 }
 
+@function isPercentageUnit($value) {
+  @return str_index($value + "", "%") != null;
+}
+
 @mixin hairline($border-color: #ccc, $border-radius: 0, $border-style: solid) {
   &:after {
     border: 1px $border-style $border-color;
     -webkit-border-radius: $border-radius;
     border-radius: $border-radius;
+
+    @if isPercentageUnit($border-radius) == false {
+      -webkit-border-radius: $border-radius;
+      border-radius: $border-radius;
+
+      @for $i from 2 through 3 {
+        @media(-webkit-min-device-pixel-ratio: $i), (min-device-pixel-ratio: $i) {
+          -webkit-border-radius: $border-radius * $i;
+          border-radius: $border-radius * $i;
+        }
+      }
+    }
+
     @extend %border;
   }
 }
