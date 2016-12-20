@@ -38,8 +38,6 @@
 .demo-border:after {
   border: 1px solid #ff2e51;
   -webkit-border-radius: 10px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
   border-radius: 10px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
     .demo-border:after {

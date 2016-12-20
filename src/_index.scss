@@ -34,9 +34,6 @@
     border-radius: $border-radius;
 
     @if isPercentageUnit($border-radius) == false {
-      -webkit-border-radius: $border-radius;
-      border-radius: $border-radius;
-
       @for $i from 2 through 3 {
         @media(-webkit-min-device-pixel-ratio: $i), (min-device-pixel-ratio: $i) {
           -webkit-border-radius: $border-radius * $i;
