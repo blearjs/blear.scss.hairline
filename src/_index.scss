@@ -1,0 +1,61 @@
+// 发丝线
+
+%border {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+
+  width: percentage(1);
+  height: percentage(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+
+  @for $i from 2 through 3 {
+    @media(-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+      width: percentage($i);
+      height: percentage($i);
+      -webkit-transform: scale(1/$i);
+      transform: scale(1/$i);
+    }
+  }
+}
+
+@mixin hairline($border-color: #ccc, $border-radius: 0, $border-style: solid) {
+  &:after {
+    border: 1px $border-style $border-color;
+    -webkit-border-radius: $border-radius;
+    border-radius: $border-radius;
+    @extend %border;
+  }
+}
+
+@mixin hairline-top($border-color: #ccc, $border-style: solid) {
+  &:after {
+    border-top: 1px $border-style $border-color;
+    @extend %border;
+  }
+}
+
+@mixin hairline-right($border-color: #ccc, $border-style: solid) {
+  &:after {
+    border-right: 1px $border-style $border-color;
+    @extend %border;
+  }
+}
+
+@mixin hairline-bottom($border-color: #ccc, $border-style: solid) {
+  &:after {
+    border-bottom: 1px $border-style $border-color;
+    @extend %border;
+  }
+}
+
+@mixin hairline-left($border-color: #ccc, $border-style: solid) {
+  &:after {
+    border-left: 1px $border-style $border-color;
+    @extend %border;
+  }
+}

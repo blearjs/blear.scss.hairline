@@ -1,0 +1,64 @@
+@import "../src/index";
+
+$border-color: #ff2e51;
+
+.container {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.demo, .demo2 {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  float: left;
+  margin-left: 30px;
+}
+
+.demo {
+  &-border {
+    @include hairline($border-color, 10%);
+  }
+
+  &-top {
+    @include hairline-top($border-color);
+  }
+
+  &-right {
+    @include hairline-right($border-color);
+  }
+
+  &-bottom {
+    @include hairline-bottom($border-color);
+  }
+
+  &-left {
+    @include hairline-left($border-color);
+  }
+}
+
+.demo2 {
+  &-border {
+    border: 1px solid $border-color;
+    -webkit-border-radius: 10%;
+    border-radius: 10%;
+  }
+
+  &-top {
+    border-top: 1px solid $border-color;
+  }
+
+  &-right {
+    border-right: 1px solid $border-color;
+  }
+
+  &-bottom {
+    border-bottom: 1px solid $border-color;
+  }
+
+  &-left {
+    border-left: 1px solid $border-color;
+  }
+}
