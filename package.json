@@ -14,7 +14,10 @@
   "main": "src/index.js",
   "keywords": [
     "blear",
-    "__template__",
+    "scss",
+    "hairline",
+    "1px",
+    "device-ratio",
     "cloudcome",
     "ydr.me"
   ],
