@@ -20,7 +20,7 @@ $border-color: #ff2e51;
 
 .demo {
   &-border {
-    @include hairline($border-color, 10px);
+    @include hairline($border-color, 30px);
   }
 
   &-top {
@@ -43,8 +43,8 @@ $border-color: #ff2e51;
 .demo2 {
   &-border {
     border: 1px solid $border-color;
-    -webkit-border-radius: 10%;
-    border-radius: 10%;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
   }
 
   &-top {

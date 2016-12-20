@@ -37,16 +37,16 @@
 
 .demo-border:after {
   border: 1px solid #ff2e51;
-  -webkit-border-radius: 10px;
-  border-radius: 10px; }
+  -webkit-border-radius: 30px;
+  border-radius: 30px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
     .demo-border:after {
-      -webkit-border-radius: 20px;
-      border-radius: 20px; } }
+      -webkit-border-radius: 60px;
+      border-radius: 60px; } }
   @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
     .demo-border:after {
-      -webkit-border-radius: 30px;
-      border-radius: 30px; } }
+      -webkit-border-radius: 90px;
+      border-radius: 90px; } }
 
 .demo-top:after {
   border-top: 1px solid #ff2e51; }
@@ -62,8 +62,8 @@
 
 .demo2-border {
   border: 1px solid #ff2e51;
-  -webkit-border-radius: 10%;
-  border-radius: 10%; }
+  -webkit-border-radius: 30px;
+  border-radius: 30px; }
 
 .demo2-top {
   border-top: 1px solid #ff2e51; }
