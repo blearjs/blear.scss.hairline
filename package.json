@@ -1,11 +1,9 @@
 {
-  "name": "blear.xxx",
+  "name": "blear.scss.hairline",
   "version": "1.0.0",
-  "description": "描述",
+  "description": "发丝线，适应不同设备的一像素边框，支持圆角",
   "scripts": {
-    "live": "browser-sync start --config bs-config.js",
-    "test": "node ./node_modules/.bin/karma start karma.conf.js --single-run",
-    "prepublish": "npm test"
+    "live": "browser-sync start --config bs-config.js"
   },
   "preferGlobal": false,
   "bin": {},
@@ -26,13 +24,13 @@
     "url": "http://ydr.me"
   },
   "contributors": [],
-  "homepage": "https://github.com/blearjs/blear.xxx",
+  "homepage": "https://github.com/blearjs/blear.scss.hairline",
   "repository": {
     "type": "git",
-    "url": "https://github.com/blearjs/blear.xxx"
+    "url": "https://github.com/blearjs/blear.scss.hairline"
   },
   "bugs": {
-    "url": "https://github.com/blearjs/blear.xxx/issues"
+    "url": "https://github.com/blearjs/blear.scss.hairline/issues"
   },
   "dependencies": {},
   "peerDependencies": {},
