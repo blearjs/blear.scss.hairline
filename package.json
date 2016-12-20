@@ -1,6 +1,6 @@
 {
   "name": "blear.scss.hairline",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "发丝线，适应不同设备的一像素边框，支持圆角",
   "scripts": {
     "live": "browser-sync start --config bs-config.js"
