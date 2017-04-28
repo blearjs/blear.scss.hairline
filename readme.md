@@ -4,8 +4,7 @@
 [![build status][travis-img]][travis-url]
 [![coverage][coveralls-img]][coveralls-url]
 
-![hairline](http://img.lv-guanjia.com/monitor/dangkr/biz-article/2016122016004300makxak)
-
+<https://blear.ydr.me/scss/hairline>
 
 [travis-img]: https://img.shields.io/travis/blearjs/blear.scss.hairline/master.svg?style=flat-square
 [travis-url]: https://travis-ci.org/blearjs/blear.scss.hairline
